@@ -44,7 +44,7 @@ jobs:
       env:
         NEW_VERSION: ${{ steps.version.outputs.version }}
       run: |
-        docker push angel86/graphql:NEW_VERSION
+        docker push angel86/graphql:$NEW_VERSION
         docker push angel86/graphql:lastest
         
     #- name: Build the Docker image
